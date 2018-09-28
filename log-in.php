@@ -4,10 +4,14 @@ $_SESSION["log-in"]=0;
 
 ?>
 <style>
-#center{
-	
-    text-align: center;
-}
+	#center{
+		position: absolute;
+		width: 100%;
+		height: 20px;
+		top: 50%;
+		margin-top: -10px;
+		text-align: center;
+	}
 </style>
 
 <!DOCTYPE html>
@@ -20,7 +24,7 @@ $_SESSION["log-in"]=0;
 		<form action="validate_log-in.php" method=post>
 			<input type=text name=name>
 			<input type=password name=pass><?phpif($_SESSION["error"]==true)echo"wrong pass or username"?>
-			<button type=submit value=log-in>
+			<button type=submit value=log-in>log-in</button>
 		</form>
 	</div>
 	</body>
